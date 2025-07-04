@@ -1,0 +1,151 @@
+.navbar-custom {
+            background-color: #00B8C0; /* Color turquesa */
+        }
+.button1{
+            background-color: #00757E;
+        }
+.Container1{
+            background-color: #00B8C0;
+        }
+.navbar-custom .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: justify;
+            direction: rtl;
+            color: #ffffff;
+        }
+.navbar-custom .nav-link {
+            color: black !important; /* Color negro para las opciones */
+        }
+.navbar-custom .nav-link:hover {
+            color: white !important; /* Color blanco al pasar el mouse */
+        }
+        .navbar-custom .navbar-toggler-icon {
+            background-color: #00B8C0; /* Color de icono del navbar en móviles */
+        }
+        .navbar-custom .btn-custom {
+            background-color: #00757E; /* Botón verde */
+            color: white;
+        }
+        .navbar-custom .btn-custom:hover {
+            background-color: #00757E; /* Botón verde oscuro al pasar el mouse */
+        }
+        .image-container{
+            width: 450px;
+        }
+        .titulo1{
+            text-align: center;
+            Color: #00B8C0;
+        }
+        .titulo2{
+            text-align: center;
+            Color: #00757E;
+        }
+        .texto1{
+            Color: #000000;
+        }
+        .texto2{
+            Color: #00B8C0;
+        }
+        .important-section {
+
+            padding: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #00757E;
+            padding: 40px 0;
+        }
+        footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        footer ul li {
+            margin: 10px 0;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-section-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        .social-icons a:hover {
+            color: #00B8C0;
+        }
+        .footer-logo img {
+            width: 250px;
+        }
+        @media (max-width: 768px) {
+            footer .row {
+                text-align: center;
+                color: #00B8C0;
+            }
+            footer .social-icons {
+                margin-top: 20px;
+            }
+            footer .footer-logo {
+                margin-top: 20px;
+            }
+        }
+        .social-icon {
+            width: 150px;
+            height: 150px;
+            margin-right: 10px;
+        }
+        .social-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .social-card p {
+            flex: 1;
+        }
+        /* Target the accordion button when it's expanded */
+    .accordion-button:not(.collapsed) {
+        background-color: #00B8C0; /* Background color for the selected accordion */
+        color: white; /* Optional: Change text color when expanded */
+    }
+
+    /* Optional: Add a different background color for collapsed accordion button */
+    .accordion-button.collapsed {
+        background-color: #f8f9fa; /* Default background color for collapsed accordion items */
+    }
+
+.carousel-control-prev-icon{
+    background-color: #00B8C0;
+}
+.carousel-control-next-icon{
+    background-color: #00B8C0;
+}
+/**/
+/* Cambiar el color del borde de las tarjetas */
+.card {
+    border: 2px solid #00B8C0; /* Borde de color #00B8C0 */
+}
+
+/* Cambiar el color de los títulos dentro de las tarjetas */
+.card-title {
+    color: #00B8C0; /* Color de los títulos de las tarjetas */
+}
+
+/* Cambiar el color del borde de los botones dentro de las tarjetas */
+.btn.btn-primary {
+    background-color: #00B8C0; /* Fondo del botón */
+    border-color: #00B8C0; /* Borde del botón */
+}
+
+/* Cambio del color del botón al pasar el mouse (hover) */
+.btn.btn-primary:hover {
+    background-color: #00A1B2; /* Un tono más oscuro para el hover */
+    border-color: #00A1B2; /* Un tono más oscuro para el hover */
+}
