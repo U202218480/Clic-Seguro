@@ -112,13 +112,13 @@
         }
         /* Target the accordion button when it's expanded */
     .accordion-button:not(.collapsed) {
-        background-color: #00B8C0; /* Background color for the selected accordion */
-        color: white; /* Optional: Change text color when expanded */
+        background-color: #00B8C0; 
+        color: white;
     }
 
     /* Optional: Add a different background color for collapsed accordion button */
     .accordion-button.collapsed {
-        background-color: #f8f9fa; /* Default background color for collapsed accordion items */
+        background-color: #f8f9fa;
     }
 
 .carousel-control-prev-icon{
@@ -130,24 +130,24 @@
 /**/
 /* Cambiar el color del borde de las tarjetas */
 .card {
-    border: 2px solid #00B8C0; /* Borde de color #00B8C0 */
+    border: 2px solid #00B8C0;
 }
 
 /* Cambiar el color de los títulos dentro de las tarjetas */
 .card-title {
-    color: #00B8C0; /* Color de los títulos de las tarjetas */
+    color: #00B8C0;
 }
 
 /* Cambiar el color del borde de los botones dentro de las tarjetas */
 .btn.btn-primary {
-    background-color: #00B8C0; /* Fondo del botón */
-    border-color: #00B8C0; /* Borde del botón */
+    background-color: #00B8C0; 
+    border-color: #00B8C0;
 }
 
 /* Cambio del color del botón al pasar el mouse (hover) */
 .btn.btn-primary:hover {
-    background-color: #00A1B2; /* Un tono más oscuro para el hover */
-    border-color: #00A1B2; /* Un tono más oscuro para el hover */
+    background-color: #00A1B2;
+    border-color: #00A1B2; 
 }
 /* Espaciado y alineación de las preguntas */
 .question-container {
@@ -225,9 +225,10 @@ body {
 .img-fluid {
     max-width: 300px;
     height: auto;
+
 }
 
 /* Espacio adicional después de los botones y antes del footer */
 .question-container .mt-5 {
-    margin-top: 50px;  /* Ajusta este valor según tus necesidades */
+    margin-top: 50px;
 }
