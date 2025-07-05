@@ -149,3 +149,85 @@
     background-color: #00A1B2; /* Un tono más oscuro para el hover */
     border-color: #00A1B2; /* Un tono más oscuro para el hover */
 }
+/* Espaciado y alineación de las preguntas */
+.question-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Estilo de los botones */
+.btn-primary {
+    background-color: #00B8C0;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #00A1B2;
+}
+
+.btn-secondary {
+    background-color: #f0ad4e;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #ec971f;
+}
+
+/* Estilo para imágenes */
+.img-fluid {
+    max-width: 200px;
+    height: auto;
+}
+
+
+
+/* Estilo de la barra de navegación */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Espaciado y alineación de las preguntas */
+.question-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Estilo de los botones */
+.btn-primary {
+    background-color: #00B8C0;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #00A1B2;
+}
+
+.btn-secondary {
+    background-color: #f0ad4e;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #ec971f;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Estilo para imágenes */
+.img-fluid {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Espacio adicional después de los botones y antes del footer */
+.question-container .mt-5 {
+    margin-top: 50px;  /* Ajusta este valor según tus necesidades */
+}
