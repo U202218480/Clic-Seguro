@@ -223,7 +223,7 @@ body {
 
 /* Estilo para imágenes */
 .img-fluid {
-    max-width: 300px;
+    max-width: 500px;
     height: auto;
 
 }
@@ -232,3 +232,4 @@ body {
 .question-container .mt-5 {
     margin-top: 50px;
 }
+
