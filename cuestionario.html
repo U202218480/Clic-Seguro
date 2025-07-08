@@ -15,7 +15,8 @@
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="Iconos e imagenes\logo_splash.png" alt="Logo" style="width: 60px; height: 70px; margin-right: 25px;">
+                <img src="Iconos e imagenes\logo_splash.png" alt="Logo"
+                    style="width: 60px; height: 70px; margin-right: 25px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,22 +26,27 @@
                 <!-- Lista de navegación alineada a la derecha -->
                 <ul class="navbar-nav justify-content-end ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html" style ="font-weight: bold">‎ ‎ ‎ Inicio‎ ‎ ‎ </a>
+                        <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: bold">‎ ‎ ‎
+                            Inicio‎ ‎ ‎ </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="configuracion-redes.html" style ="font-weight: bold">‎ ‎ ‎ Configuración‎ ‎ ‎ </a>
+                        <a class="nav-link" href="configuracion-redes.html" style="font-weight: bold">‎ ‎ ‎
+                            Configuración‎ ‎ ‎ </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#Riesgos" style ="font-weight: bold">‎ ‎ ‎ Información de riesgo‎ ‎ ‎ </a>
+                        <a class="nav-link" href="index.html#Riesgos" style="font-weight: bold">‎ ‎ ‎ Información de
+                            riesgo‎ ‎ ‎ </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#Ruta-denuncia" style ="font-weight: bold">‎ ‎ ‎ Ruta de denuncia‎ ‎ ‎ </a>
+                        <a class="nav-link" href="index.html#Ruta-denuncia" style="font-weight: bold">‎ ‎ ‎ Ruta de
+                            denuncia‎ ‎ ‎ </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cuestionario.html" style ="font-weight: bold">‎ ‎ ‎ Autoevaluación‎ ‎ ‎ </a>
+                        <a class="nav-link" href="cuestionario.html" style="font-weight: bold">‎ ‎ ‎ Autoevaluación‎ ‎ ‎
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-custom" href="#" style ="font-weight: bold">‎ ‎ ‎ Mi Cuenta‎ ‎ ‎ </a>
+                        <a class="btn btn-custom" href="#" style="font-weight: bold">‎ ‎ ‎ Mi Cuenta‎ ‎ ‎ </a>
                     </li>
                 </ul>
             </div>
@@ -54,8 +60,8 @@
             <p>Le cuento a mis amistades y/o seguidores en redes socialeso videojuegos<br>
                 sobre mis gustos (música, animes, lugares, comida, ropa, etc.)</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(2)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(2)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(2, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(2, 'No')">No</button>
             </div>
 
             <div class="mt-5"></div>
@@ -68,8 +74,8 @@
             <p>Le cuento a mis amistades y/o seguidores en redes socialeso videojuegos<br>
                 sobre mis gustos (música, animes, lugares, comida, ropa, etc.)</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(3)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(3)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(3, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(3, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -80,8 +86,8 @@
             <img src="Iconos e imagenes\buuu.png" alt="Imagen relacionada" class="img-fluid" style="max-width: 300px;">
             <p>Cuento mis problemas en las redes sociales.</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(4)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(4)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(4, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(4, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -91,8 +97,8 @@
             <img src="Iconos e imagenes\buuu.png" alt="Imagen relacionada" class="img-fluid" style="max-width: 300px;">
             <p>La cámara web de mi computadora siempre está conectada.</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(5)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(5)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(5, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(5, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -103,8 +109,8 @@
             <p>Acepto como "amiga o amigo" en redes sociales a cualquiera<br>
                 que lo solicita</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(6)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(6)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(6, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(6, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -114,8 +120,8 @@
             <img src="Iconos e imagenes\buuu.png" alt="Imagen relacionada" class="img-fluid" style="max-width: 300px;">
             <p>Reconozco perfil falsos en las redes sociales.</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(7)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(7)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(7, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(7, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -126,8 +132,8 @@
             <p>Me gusta que mis amigas/os me digan cosas bonitas cuando<br>
                 publico fotos o reels en mis redes sociales.</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(8)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(8)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(8, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(8, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -137,8 +143,8 @@
             <img src="Iconos e imagenes\buuu.png" alt="Imagen relacionada" class="img-fluid" style="max-width: 300px;">
             <p>Me gusta subir fotos o videos a mis redes sociales.</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(9)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(9)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(9, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(9, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -148,8 +154,8 @@
             <img src="Iconos e imagenes\buuu.png" alt="Imagen relacionada" class="img-fluid" style="max-width: 300px;">
             <p>Tengo un smartphone que uso todos los días.</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(10)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(10)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(10, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(10, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -159,8 +165,8 @@
             <img src="Iconos e imagenes\buuu.png" alt="Imagen relacionada" class="img-fluid" style="max-width: 300px;">
             <p>Alguna vez me he sentido incómodo/a con Información que he vsito en internet.</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(11)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(11)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(11, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(11, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -171,8 +177,8 @@
             <p>¿Podria grabar videos íntimos o eróticos con mi enamorada o <br>
                 algún amigo de confianza?</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(12)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(12)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(12, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(12, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -183,8 +189,8 @@
             <p>¿Alguna vez me han propuesto grabarme videos o tomarme fotos<br>
                 íntimas?</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(13)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(13)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(13, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(13, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -194,8 +200,8 @@
             <img src="Iconos e imagenes\buuu.png" alt="Imagen relacionada" class="img-fluid" style="max-width: 300px;">
             <p>¿Me gusta compartir videos, mensajes o fotos íntimas?</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(14)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(14)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(14, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(14, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -206,8 +212,8 @@
             <p>¿Alguna vez me he reunido presencialmente con alguien<br>
                 que conocí virtualmente?</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="nextQuestion(15)">Sí</button>
-                <button class="btn btn-secondary" onclick="nextQuestion(15)">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(15, 'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(15, 'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
@@ -217,22 +223,36 @@
             <img src="Iconos e imagenes\buuu.png" alt="Imagen relacionada" class="img-fluid" style="max-width: 300px;">
             <p>¿He compartido las claves de mis redes sociales con mi<br> enamorada (o) o con un amigo?</p>
             <div class="mt-3">
-                <button class="btn btn-primary" onclick="showThanks()">Sí</button>
-                <button class="btn btn-secondary" onclick="showThanks()">No</button>
+                <button class="btn btn-primary" onclick="nextQuestion(16,'Sí')">Sí</button>
+                <button class="btn btn-secondary" onclick="nextQuestion(16,'No')">No</button>
             </div>
             <div class="mt-5"></div>
         </div>
-
-        <!-- Pantalla final de agradecimiento -->
-        <div id="thanksMessage" class="question-container" style="display: none;">
+        <!-- decimoSextapregunta -->
+        <div id="question16" class="question-container" style="display: none;">
             <h1 class="titulo1">¡Muchas gracias por concluir!</h1>
-            <img src="Iconos e imagenes/Jovenes_felices.png" alt="Imagen relacionada" class="img-fluid" style="max-width: 450px;">
             <div class="mt-5"></div>
+            <img src="Iconos e imagenes/Jovenes_felices.png" alt="Imagen relacionada" class="img-fluid"
+                style="max-width: 400px;">
             <div class="mt-4">
                 <button class="btn btn-success finalize-btn" onclick="endSurvey()">Finalizar</button>
             </div>
             <div class="mt-5"></div>
         </div>
+
+        <!-- Pantalla de overlay de color -->
+        <div id="overlay" class="overlay" style="display: none;">
+            <div id="overlayMessage" class="overlay-message">
+                <h2>Tu resultado es:</h2>
+                <h3 id="riskLevel">Riesgo Alto</h3>
+                <p id="riskMessage">Tu situación presenta un alto riesgo. Has recibido mensajes inapropiados o
+                    manipulativos que podrían ser un intento de grooming. Te recomendamos pedir ayuda y responder el
+                    cuestionario adicional.</p>
+                <button class="finalize-btn" onclick="closeOverlay()">Finalizar</button>
+
+            </div>
+        </div>
+
     </div>
 
     <!-- Footer -->

@@ -1,46 +1,65 @@
-// Función para cambiar de pregunta
-function nextQuestion(questionNumber) {
-    // Ocultar todas las preguntas
-    const questions = document.querySelectorAll('.question-container');
-    questions.forEach(q => q.style.display = 'none');
+let yesCount = 0;
+let noCount = 0;
 
-    // Mostrar la siguiente pregunta según el número
-    const nextQuestion = document.getElementById('question' + questionNumber);
-    if (nextQuestion) {
-        nextQuestion.style.display = 'block';
-    }
+// Función que se llama cuando el usuario responde
+function nextQuestion(questionNumber, answer) {
+  if (answer === "Sí") {
+    yesCount++;
+  } else {
+    noCount++;
+  }
+
+  // Ocultar todas las preguntas
+  const questions = document.querySelectorAll(".question-container");
+  questions.forEach((q) => (q.style.display = "none"));
+
+  // Mostrar la siguiente pregunta según el número
+  const nextQuestion = document.getElementById("question" + questionNumber);
+  if (nextQuestion) {
+    nextQuestion.style.display = "block";
+  }
+
+  // Si es la última pregunta (por ejemplo, la 15), mostrar la pantalla de agradecimiento
+  if (questionNumber === 16) {
+    showThanks();
+  }
 }
 
-
-
-// Función para cambiar de pregunta
-function nextQuestion(questionNumber) {
-    // Ocultar todas las preguntas
-    const questions = document.querySelectorAll('.question-container');
-    questions.forEach(q => q.style.display = 'none');
-
-    // Mostrar la siguiente pregunta según el número
-    const nextQuestion = document.getElementById('question' + questionNumber);
-    if (nextQuestion) {
-        nextQuestion.style.display = 'block';
-    }
-}
-
-// Función para mostrar la pantalla de agradecimiento
+// Función para mostrar la pantalla final de agradecimiento con el overlay
 function showThanks() {
-    
-    const questions = document.querySelectorAll('.question-container');
-    questions.forEach(q => q.style.display = 'none');
-    
-   
+    const overlay = document.getElementById('overlay');
+    const overlayMessage = document.getElementById('overlayMessage');
+    const riskLevel = document.getElementById('riskLevel');
+    const riskMessage = document.getElementById('riskMessage');
+
+    // Cambiar los estilos y los mensajes dependiendo del número de respuestas "Sí"
+    if (yesCount >= 11 && yesCount <= 16) {
+        overlay.classList.add('red-overlay');
+        riskLevel.innerHTML = "Riesgo Alto";  // Mensaje de riesgo alto
+        riskMessage.innerHTML = "Tu situación presenta un alto riesgo. Has recibido mensajes inapropiados o manipulativos que podrían ser un intento de grooming. Te recomendamos pedir ayuda y responder el cuestionario adicional.";
+    } else if (yesCount >= 6 && yesCount <= 10) {
+        overlay.classList.add('yellow-overlay');
+        riskLevel.innerHTML = "Riesgo Moderado";  // Mensaje de riesgo moderado
+        riskMessage.innerHTML = "Precaución. Considera tomar medidas. Es posible que tu situación necesite atención.";
+    } else if (yesCount <= 5) {
+        overlay.classList.add('green-overlay');
+        riskLevel.innerHTML = "Riesgo Bajo";  // Mensaje de riesgo bajo
+        riskMessage.innerHTML = "¡Bien! Estás tomando buenas decisiones. Sigue así.";
+    }
+
+    overlay.style.display = 'flex';  // Mostrar el overlay
+}
+
+// Función para cerrar el overlay y continuar con la encuesta
+function closeOverlay() {
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';  // Ocultar el overlay
+
+    // Si deseas seguir mostrando la pantalla final de agradecimiento
     document.getElementById('thanksMessage').style.display = 'block';
 }
 
 // Función para finalizar la encuesta y redirigir al inicio
 function endSurvey() {
-   
-    document.getElementById('thanksMessage').style.display = 'none';
-    
-    // Redirigir a la página de inicio
-    window.location.href = "index.html";  
+    window.location.href = "index.html";  // Redirige a la página de inicio
 }
