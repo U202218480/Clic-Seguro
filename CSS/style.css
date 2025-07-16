@@ -27,7 +27,7 @@
             color: black !important; /* Color negro para las opciones */
         }
 .navbar-custom .nav-link:hover {
-            color: white !important; /* Color blanco al pasar el mouse */
+            color: #007e89 !important; /* Color blanco al pasar el mouse */
         }
         .navbar-custom .navbar-toggler-icon {
             background-color: #dcdcdc; /* Color de icono del navbar en móviles */
