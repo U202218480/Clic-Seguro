@@ -35,7 +35,7 @@ function showThanks() {
     // Cambiar los estilos y los mensajes dependiendo del número de respuestas "Sí"
     if (yesCount >= 11 && yesCount <= 16) {
         overlay.classList.add('red-overlay');
-        riskImage.src = "Iconos e imagenes/verde1.png";
+        riskImage.src = "Iconos e imagenes/rojo.png";
         riskLevel.innerHTML = "Riesgo Alto";  // Mensaje de riesgo alto
         riskMessage.innerHTML = "Tu situación presenta un alto riesgo. Has recibido mensajes inapropiados o manipulativos que podrían ser un intento de grooming. Te recomendamos pedir ayuda y responder el cuestionario adicional.";
     } else if (yesCount >= 6 && yesCount <= 10) {
@@ -45,7 +45,7 @@ function showThanks() {
         riskMessage.innerHTML = "Precaución. Considera tomar medidas. Es posible que tu situación necesite atención.";
     } else if (yesCount <= 5) {
         overlay.classList.add('green-overlay');
-        riskImage.src = "Iconos e imagenes/rojo.png";
+        riskImage.src = "Iconos e imagenes/verde1.png";
         riskLevel.innerHTML = "Riesgo Bajo";  // Mensaje de riesgo bajo
         riskMessage.innerHTML = "¡Bien! Estás tomando buenas decisiones. Sigue así.";
     }
